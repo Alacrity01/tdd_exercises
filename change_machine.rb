@@ -5,12 +5,10 @@ class ChangeMachine
     coin_list = []
     coins_array = [25, 10, 5, 1]
 
-    until number == 0
-      coins_array.each do |coin|
-        while number - coin >= 0
-          coin_list << coin
-          number -= coin
-        end
+    coins_array.each do |coin|
+      while number - coin >= 0
+        coin_list << coin
+        number -= coin
       end
     end
 
