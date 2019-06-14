@@ -4,12 +4,16 @@ class RomanNumeral
   def convert(number)
     output = ""
 
-    numbers = [500, 400, 100, 90, 50, 40, 10]
+    # numbers = [500, 400, 100, 90, 50, 40, 10, 1]
+    # letters = ['D', 'CD', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
 
     until number <= 0
 
-      # numbers.each do |number_value|
-
+      # numbers.length.times do |index|
+      #   (number/numbers[index]).times do
+      #     output += letters[index]
+      #     number -= numbers[index]
+      #   end
       # end
 
       (number/500).times do 

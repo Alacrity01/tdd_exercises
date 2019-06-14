@@ -18,10 +18,6 @@ class ChangeMachine
   end 
 end
 
-
-
-
-
 RSpec.describe ChangeMachine do
   describe '#change' do
 
@@ -150,7 +146,7 @@ RSpec.describe ChangeMachine do
       expect(change_machine.coins(25)).to eq([25])
     end
 
-    it 'should return [119] if given 25' do
+    it 'should return [25, 25, 25, 25, 10, 5, 1, 1, 1, 1] if given 119' do
       change_machine = ChangeMachine.new
       expect(change_machine.coins(119)).to eq([25, 25, 25, 25, 10, 5, 1, 1, 1, 1])
     end
